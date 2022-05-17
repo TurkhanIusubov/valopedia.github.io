@@ -1,0 +1,348 @@
+.weapon_container{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+/* --- FORM INPUT --- */
+
+.form_div{
+    min-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px 0 22px 0;
+    z-index: 7;
+}
+.form_div .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 13%;
+    margin-top: -4px;
+    background: linear-gradient(to bottom, #fe4250 0 94%, transparent 93% 100%);
+    position: fixed;
+}
+.form_div .form .input{
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-style: italic;
+    outline: none;
+    border: 1px solid silver;
+    color: rgb(59, 59, 59);
+}
+
+
+/* --- WEAPON CARDS --- */
+
+.weapon_cards{
+    width: 350px;
+    min-width: 300px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgb(167, 6, 6);
+    overflow: hidden;
+    position: relative;
+    transition: all .3s;
+}
+.weapon_cards:hover{
+    transform: scale(1.02);
+    transition: all .3s;
+}
+.weapon_img1{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.weapon_img1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.weapon_img2{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.weapon_img2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.weapon_video{
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.weapon_cards h2{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.7rem;
+}
+.weapon_cards p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    background: #fe4250;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+}
+.weapon_cards p svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    transition: all .3s;
+    pointer-events: none;
+}
+.weapon_cards h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    background: #3f3fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.weapon_ul{
+    position: absolute;
+    bottom: -100%;
+    height: 70%;
+    width: 100%;
+    z-index: 4;
+    opacity: 0;
+    transition: all .4s;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 15px;
+}
+.weapon_ul span{
+    color: #ffffff;
+    font-size: 21px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #000;
+}
+.weapon_ul li{
+    background: #fe4250;
+    margin: 5px 0 ;
+    padding: 4px 0 4px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.weapon_toggle_className{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    z-index: 4;
+    background: #ffffff;
+    opacity: 1;
+    transition: all .4s;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 15px;
+}
+.weapon_toggle_className span{
+    color: #ffffff;
+    font-size: 21px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #000;
+    margin-right: -10px;
+}
+.weapon_toggle_className li{
+    background: #fe4250;
+    margin: 5px 0 ;
+    padding: 4px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.weapon_e_paragraph svg{
+    transform: rotate(180deg);
+    transition: all .3s;
+}
+@media (max-width:768px) {
+    .weapon_img1{
+        width: 90%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .weapon_img1 img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .weapon_img2{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .weapon_img2 img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media (max-width:350px) {
+    .weapon_cards h2{
+        text-align: center;
+        margin: 6px 0;
+        font-size: 1.6rem;
+    }
+    .weapon_toggle_className{
+        height: 72%;
+    }
+}
+
+
+/* --- FOOTER --- */
+
+.footer{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a_icons_div{
+    margin-top: 7px;
+}
+.a_icons_div a{
+    margin: 0 3px;
+}
+.a_icons_div a .a_icon{
+    font-size: 2em;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#01012c69, #01012c69);
+    transition: all .3s;
+
+}
+.a_icons_div a:nth-child(1) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(rgb(3,108,227), rgb(3,108,227));
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(2) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(circle at 33% 100%, #fed330 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(3) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#1D9BF0, #1D9BF0);
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(4) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#161B22, #161B22);
+    transition: all .3s;
+}
+.a_icons_div + a{
+    color: #fe4250;
+    font-size: 1.08em;
+    margin: 4px 0 5px 0;
+    padding: 0 5px 3px 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+    user-select: black;
+}
+.a_icons_div + a::selection{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+}
+.a_icons_div + a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: .5px;
+    background: #fe4250;
+    bottom: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.a_icons_div + a:hover::before{
+    width: 100%;
+    transition: all .3s;
+}
+.a_icons_div + a:hover{
+    color: rgb(255, 0, 0);
+    transition: all .3s;
+}
+.coded_by_turkhan_iusubov{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(134, 134, 134);
+    cursor: text;
+    user-select: none;
+}
+.coded_by_turkhan_iusubov p:last-child{
+    margin-top: 1px;
+}
+.coded_by_turkhan_iusubov p:last-child span{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+    user-select: all;
+}

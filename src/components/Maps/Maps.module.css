@@ -1,0 +1,499 @@
+.map_container{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 120px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* !!!--- MAP -- COPY -- CONTAINER ---!!!  */
+
+.map_container_copy{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* --- FORM INPUT --- */
+
+.form_div_copy{
+    display: none;
+}
+
+.form_div{
+    min-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px 0 22px 0;
+    z-index: 7;
+}
+.form_div .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 13%;
+    margin-top: -4px;
+    background: linear-gradient(to bottom, #fe4250 0 94%, transparent 93% 100%);
+    position: fixed;
+}
+.form_div .form .input{
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-style: italic;
+    outline: none;
+    border: 1px solid silver;
+    color: rgb(59, 59, 59);
+}
+
+
+
+/* --- MAP CARDS --- */
+
+.map_cards{
+    width: 350px;
+    min-width: 300px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgb(167, 6, 6);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    scroll-margin-top: 120px;
+
+}
+.map_cards:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+/* !!!--- .map_cards_copy ---!!! */
+
+.map_cards_copy{
+    width: 350px;
+    min-width: 300px;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgb(167, 6, 6);
+    overflow: hidden;
+}
+
+/* ----- MAP big_img_container ----- */
+
+.big_img_container_copy{
+    transition: all 0.3s;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.big_img_container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    background: rgba(0, 0, 0, 0.913);
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.big_img_container .big_img_child_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .3s;
+}
+
+.big_img_child_container .big_img_div{
+    width: 80%;
+    min-width: 350px;
+    transition: all .3s;
+}
+.big_img_container .big_img_div img{
+    width: 100%;
+}
+
+@media (max-width:1040px) {
+    .big_img_child_container .big_img_div{
+        width: 95%;
+        min-width: 350px;
+        transition: all .3s;
+    }
+}
+
+
+.big_img_child_container .big_img_close_icon{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #fff;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.big_img_child_container .big_img_close_icon path{
+    pointer-events: none;
+}
+
+
+/* ---- MAP .drawing_img_container ----- */
+
+.drawing_img_container_copy{
+    transition: all 0.3s;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.drawing_img_container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    background: rgba(0, 0, 0, 0.913);
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.drawing_img_container .drawing_img_child_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .3s;
+}
+
+.drawing_img_child_container .drawing_img_div{
+    height: 100%;
+    transition: all .3s;
+}
+.drawing_img_container .drawing_img_div img{
+    height: 100%;
+}
+
+@media (max-width:720px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 90%;
+        transition: all .3s;
+    }
+}
+@media (max-width:660px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 80%;
+        transition: all .3s;
+    }
+}
+@media (max-width:570px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 70%;
+        transition: all .3s;
+    }
+}
+@media (max-width:500px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 60%;
+        transition: all .3s;
+    }
+}
+@media (max-width:430px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 50%;
+        transition: all .3s;
+    }
+}
+@media (max-width:359px) {
+    .drawing_img_child_container .drawing_img_div{
+        height: 43%;
+        transition: all .3s;
+    }
+}
+
+
+.drawing_img_child_container .drawing_img_close_icon{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #fff;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.drawing_img_child_container .drawing_img_close_icon path{
+    pointer-events: none;
+}
+
+
+/* --- MAP H1 --- */
+
+.map_cards h1 {
+    margin: 10px 0 7px 0;
+}
+.map_cards_copy h1{
+    margin: 10px 0 7px 0;
+}
+/* --- LITTLE IMG --- */
+
+.map_little_img{
+    width: 90%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.map_little_img:hover{
+    transform: scale(1.04);
+    transition: transform .4s;
+}
+
+.map_little_img img{
+    width: 100%;
+    border-radius: 5px;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* --- DRAWING IMG --- */
+
+.map_drawing_img{
+    width: 83%;
+    position: relative;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map_drawing_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    cursor: pointer;
+    transition: all .4s;
+}
+.map_drawing_img img:hover{
+    transform: scale(1.03);
+}
+
+.map_drawing_img .map_drawing_child_div{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.map_drawing_img .map_drawing_child_div h1{
+    background: #fe4250;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+/* --- MAP H2 & H3 --- */
+
+.map_cards h2{
+    background: #fe4250;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    letter-spacing: 1.1px;
+}
+
+.map_cards_copy h2{
+    background: #fe4250;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    letter-spacing: 1.1px;
+}
+
+.map_cards h3{
+    background: #3f3fff;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1.4px;
+}
+
+.map_cards_copy h3{
+    background: #3f3fff;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1.4px;
+}
+
+
+/* --- FOOTER --- */
+
+.footer_copy{
+    display: none;
+}
+
+.footer{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a_icons_div{
+    margin-top: 7px;
+}
+.a_icons_div a{
+    margin: 0 3px;
+}
+.a_icons_div a .a_icon{
+    font-size: 2em;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#01012c69, #01012c69);
+    transition: all .3s;
+
+}
+.a_icons_div a:nth-child(1) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(rgb(3,108,227), rgb(3,108,227));
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(2) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(circle at 33% 100%, #fed330 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(3) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#1D9BF0, #1D9BF0);
+    transition: all .3s;
+}
+.a_icons_div a:nth-child(4) .a_icon:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: radial-gradient(#161B22, #161B22);
+    transition: all .3s;
+}
+.a_icons_div + a{
+    color: #fe4250;
+    font-size: 1.08em;
+    margin: 4px 0 5px 0;
+    padding: 0 5px 3px 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+    user-select: black;
+}
+.a_icons_div + a::selection{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+}
+.a_icons_div + a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: .5px;
+    background: #fe4250;
+    bottom: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.a_icons_div + a:hover::before{
+    width: 100%;
+    transition: all .3s;
+}
+.a_icons_div + a:hover{
+    color: rgb(255, 0, 0);
+    transition: all .3s;
+}
+.coded_by_turkhan_iusubov{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(134, 134, 134);
+    cursor: text;
+    user-select: none;
+}
+.coded_by_turkhan_iusubov p:last-child{
+    margin-top: 1px;
+}
+.coded_by_turkhan_iusubov p:last-child span{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+    user-select: all;
+}

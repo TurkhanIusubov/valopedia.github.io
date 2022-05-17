@@ -1,0 +1,43 @@
+.error_container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(4, 1, 25);
+    z-index: 10;
+    overflow: hidden;
+    color: rgb(156, 65, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.error_container h1{
+    font-size: 3.4em;
+    margin-bottom: 15px;
+    user-select: none;
+}
+
+.error_container h3{
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.error_container li{
+    color: rgb(68, 0, 152);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    user-select: none;
+}
+
+.error_container li:hover{
+    text-decoration: underline;
+    transition:all .3s;
+}
+
+.error_container li svg{
+    margin-top: 3px;
+}

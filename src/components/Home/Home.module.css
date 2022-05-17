@@ -1,0 +1,311 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(120deg, #fe4250, rgb(41, 41, 255));
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.loading{
+    min-height: 100vh;
+    background: #fff;
+}
+.loading h1{
+    color: red;
+    font-size: 3em;
+}
+.text_container{
+    width: 50%;
+    padding-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.text_container h1{
+    color: rgb(231, 231, 231);
+    font-size: 2.2em;
+}
+.text_container h1 span{
+    color: #f9e000;
+}
+.text_container p{
+    max-width: 550px;
+    color: rgb(231, 231, 231);
+    font-size: 1.3em;
+    margin: 10px 0 25px 0;
+}
+.text_container button{
+    outline: none;
+    font-size: 2em;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #fe4250;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+    z-index: 5;
+}
+.text_container button:hover{
+    background: #425bfe;
+    color: #fff;
+}
+.images{
+    position: relative;
+    width: fit-content;
+    top: -230px;
+}
+.images .shape{
+    position: absolute;
+    height: 73vh;
+    z-index: 1;
+    left: 45px;
+    top: 50px;
+    transform: rotate(180deg);
+    transition: all .7s ;
+}
+.images .sova{
+    position: absolute;
+    height: 88vh;
+    z-index: 2;
+    transition: all .7s;
+    left: 0;
+}
+.sova:hover{
+    left: -10px;
+    transition: all .7s;
+}
+.sova:hover + .shape{
+    transition: all .7s;
+    top:30px;
+}
+.home_icons{
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+}
+.home_icons::before{
+    content: '';
+    height: 25px;
+    width: 25px;
+    left: 35.5px;
+    top: 3px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+}
+.home_icons::after{
+    content: '';
+    height: 25px;
+    width: 25px;
+    right: 35.5px;
+    top: 3px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+}
+.home_icons svg{
+    font-size: 2em;
+    transition: all .3s;
+    z-index: 2;
+}
+.home_icons .first_icon{
+    color: #1D9BF0;
+    position: relative;
+}
+.home_icons .last_icon{
+    color: #161B22;
+    position: relative;
+}
+.home_icons svg:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+}
+@media (max-width:1200px){
+    .text_container{
+        width: 45%;
+    }
+    .images .shape{
+        height: 70vh;
+    }
+}
+@media (max-width:990px) {
+    .text_container{
+        width: 45%;
+        margin-left: 3.5vw;
+        margin-top: 60px;
+    }
+    .text_container h1{
+        color: rgb(231, 231, 231);
+        font-size: 2em;
+    }
+    .text_container h1 span{
+        color: #f9e000;
+    }
+    .text_container p{
+        max-width: 400px;
+        color: rgb(231, 231, 231);
+        font-size: 1.1em;
+        margin: 10px 0 25px 0;
+    }
+    .text_container button{
+        outline: none;
+        font-size: 2em;
+        padding: 10px 15px;
+        border-radius: 12px;
+        color: #fe4250;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: all .4s;
+        z-index: 5;
+    }
+    .text_container button:hover{
+        background: #425bfe;
+        color: #fff;
+    }
+    .images{
+        position: relative;
+        width: fit-content;
+        top: -190px;
+        left: -20px;
+    }
+    .images .shape{
+        position: absolute;
+        height: 450px;
+        z-index: 1;
+        left: 47px;
+        top: 50px;
+        transform: rotate(180deg);
+        transition: all .7s ;
+    }
+    .images .sova{
+        position: absolute;
+        height: 550px;
+        z-index: 2;
+        transition: all .7s;
+        left: 0;
+    }
+    .sova:hover{
+        left: -10px;
+        transition: all .7s;
+    }
+    .sova:hover + .shape{
+        transition: all .7s;
+        top:30px;
+    }
+}
+@media (max-width:890px){
+    .text_container{
+        width: 40%;
+        padding-left: 10px;
+    }
+    .images{
+        left: -20px;
+    }
+    .images .shape{
+        height: 430px;
+        left: 42px
+    }
+}
+@media (max-width:770px){
+    .home{
+        width: 100%;
+        min-height: 100vh;
+        background-image:linear-gradient(120deg, #fe4250, rgb(41, 41, 255));
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .loading{
+        min-height: 100vh;
+        background: #fff;
+    }
+    .loading h1{
+        color: red;
+        font-size: 2.5em;
+    }
+    .text_container{
+        width: 100%;
+        height: fit-content;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 120px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .text_container h1{
+        text-align: center;
+        width: 100%;
+        color: rgb(231, 231, 231);
+        font-size: 2.2em;
+    }
+    .text_container h1 span{
+        color: #f9e000;
+    }
+    .text_container p{
+        width: 95%;
+        text-align: center;
+        color: rgb(231, 231, 231);
+        font-size: 1.3em;
+        margin: 20px 0 35px 0;
+    }
+    .text_container button{
+        outline: none;
+        font-size: 2em;
+        padding: 10px 15px;
+        border-radius: 12px;
+        color: #fe4250;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: all .4s;
+        z-index: 5;
+    }
+    .text_container button:hover{
+        background: #425bfe;
+        color: #fff;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .images .shape{
+        position: absolute;
+        height:370px;
+        width: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    .images .sova{
+        position: absolute;
+        width: fit-content;
+        height: 500px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .sova:hover + .shape{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
