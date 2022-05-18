@@ -36,6 +36,10 @@
     font-size: 1.3em;
     margin: 10px 0 25px 0;
 }
+.text_container .link{
+    display: inline-block;
+    width: 161px;
+}
 .text_container button{
     outline: none;
     font-size: 2em;
