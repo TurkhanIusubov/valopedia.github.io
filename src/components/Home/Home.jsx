@@ -21,7 +21,7 @@ const Home = () => {
                 <div className={styles.text_container}>
                     <h1>This is <span>VALORANT</span> collection.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime voluptas obcaecati incidunt corporis accusantium, amet voluptatibus a error molestiae.</p>
-                    <Link to='/agents' className={styles.link}><button>Get Start</button></Link>
+                    <Link to='/agents' className={styles.link}><button>Get Started</button></Link>
                     <div className={styles.home_icons}>
                         <a href='https://twitter.com/Turkhan_Iusubov' target='_blank' rel="noreferrer" ><FaIcons.FaTwitterSquare className={styles.first_icon} /></a>
                         <a href='https://github.com/TurkhanIusubov' target='_blank' rel="noreferrer" ><FaIcons.FaGithubSquare className={styles.last_icon} /></a>
